@@ -23,7 +23,7 @@ class Location extends StatelessWidget {
               },
               child:  Container(
                 width: 200,
-                child: Center(child: Text('Location of the hospitals')),
+                child: Center(child: Text('Hospital Location',style: TextStyle(color: Colors.greenAccent, fontSize: 17),)),
                 color: Colors.blueAccent,
                 padding: EdgeInsets.all(20.0),
               ),
@@ -37,7 +37,7 @@ class Location extends StatelessWidget {
               },
               child:  Container(
                 width: 200,
-                child: Center(child: Text('Hospital Data')),        //data
+                child: Center(child: Text('Hospital Data',style: TextStyle(color: Colors.greenAccent, fontSize: 16),)),        //data
                 color: Colors.blueAccent,
                 padding: EdgeInsets.all(20.0),
               ),

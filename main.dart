@@ -9,7 +9,8 @@ import 'available.dart';
 void main() =>
     runApp(
         MaterialApp(
-            home: Home()
+            home: Home(),
+            debugShowCheckedModeBanner: false,
         )
     );
 
@@ -19,14 +20,14 @@ class Home extends StatelessWidget {
     Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                  image: NetworkImage('https://i.pinimg.com/236x/26/c0/de/26c0def016a944a8685e3c1b21a7d7d3.jpg'),
+                  image: NetworkImage('https://cdn.logojoy.com/wp-content/uploads/2018/10/16153733/red-navy-yellow-logo-1024x502.png'),
                   fit: BoxFit.fill
               )
           ),
       );
     return Scaffold(
         appBar: AppBar(
-          title: Text("Hospitals"),
+          title: Text("Hospitals",),
           centerTitle: true,
           backgroundColor: Color(0xFF4DB2E7),                                   //uihues on Instagram
           elevation: 0.0,
@@ -43,7 +44,7 @@ class Home extends StatelessWidget {
                 },
                 child:  Container(
                   width: 200,
-                  child: Center(child: Text('Hospitals Near Me')),
+                  child: Center(child: Text('Hospitals Near Me',style: TextStyle(color: Colors.greenAccent, fontSize: 17),)),
                   color: Colors.blueAccent,
                   padding: EdgeInsets.all(20.0),
                 ),
@@ -57,7 +58,7 @@ class Home extends StatelessWidget {
                 },
                 child:  Container(
                   width: 200,
-                  child: Center(child: Text('Support')),
+                  child: Center(child: Text('Support',style: TextStyle(color: Colors.greenAccent, fontSize: 17),)),
                   color: Colors.blueAccent,
                   padding: EdgeInsets.all(20.0),
               ),
